@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, HStack, Text, Icon } from '@chakra-ui/react'
+import checkMarkIcon from './icons/checkMarkIcon'
 
 export default function Midportion() {
   return (
@@ -27,11 +28,38 @@ export default function Midportion() {
                 </Button>
             </Box>
 
-            
+            {/* And Now the Right Side Box */}
+
+            <Box pt={"50px"} pl = {"25px"} pr = {"1-px"}>
+
+                <Text mb = {"15px"}>
+                    Access these Features when you get your Pricing Package for your Business
+                </Text>
+
+                <HStack mb = {"10px"}>
+                    <Icon as = {checkMarkIcon} />
+                    <Text> International Calling and Messaging API</Text>
+                </HStack>
+
+                <HStack mb = {"10px"}>
+                    <Icon as = {checkMarkIcon} />
+                    <Text> Additional Phone Number</Text>
+                </HStack>
+
+                <HStack mb = {"10px"}>
+                    <Icon as = {checkMarkIcon} />
+                    <Text> Automated Messages via Zapier</Text>
+                </HStack>
+
+                <HStack mb = {"10px"}>
+                    <Icon as = {checkMarkIcon} />
+                    <Text> 24/7 Support and Consulting</Text>
+                </HStack>
+
+            </Box> 
+
         </Flex>
-        
-        Midportion
-        
+                
     </Box>
   )
 }
