@@ -5,16 +5,24 @@ import checkMarkIcon from './icons/checkMarkIcon'
 export default function Midportion() {
   return (
 
-    <Box>
+    <Box 
+        maxW={"950px"}  
+        mt = {"-150px"} 
+        mx ={{base: "20px", lg: "auto"}}
+        bg = {"white"} 
+        borderRadius = {"24px"} 
+        overflow = "hidden"
+        boxShadow={"0px 20px 25px -5px rgba(0,0,0,0.2), 0px 10px 10px -5px rgba(0,0,0,0.48)"}>
+
         {/* Start of Box Container */}
 
-        <Flex>
+        <Flex direction= {{base:"column", md: "column", lg: "row"}}>
             {/* Now the Left Side Box */}
 
-            <Box bg={ "#cbb8ec"} p = {"40px"} textAlign ={"center"}>
+            <Box bg={"#cbb8ec"} p = {"40px"} textAlign ={"center"}>
 
                 <Text fontSize={"24px"} fontWeight = {"bold"}>
-                    Premiun Pro
+                    Premiun Pro 
                 </Text>
 
                 <Heading fontSize={"60px"}>
